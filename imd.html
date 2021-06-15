@@ -1,0 +1,18 @@
+if (tbLogin.Text == "Admin") 
+{
+    if (tbPass.Text == "123") 
+    {
+        MessageBox.Show("Вы вошли в учётную запись");
+        Forms.WinMain win = new Forms.WinMain();
+        win.Show();
+        this.Close();
+    }
+    else 
+    {
+        MessageBox.Show("Не верный пароль");
+    }
+}
+else
+{
+    MessageBox.Show("Не верный логин");
+}
